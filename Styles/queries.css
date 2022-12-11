@@ -1,0 +1,76 @@
+@media (max-width: 30em) {
+    html {
+        font-size: 50%;
+    }
+
+    body {
+        background-image: url(../IMG/bg-main-mobile.png);
+        background-size: 100%;
+    }
+
+    .main-container {
+        width: 90%;
+        flex-direction: column;
+        margin: 4rem auto;
+    }
+
+
+
+    .cards {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .card-logo {
+        width: 6rem;
+    }
+
+    .card-front,
+    .card-back {
+        width: 80%;
+        height: 20rem;
+        padding: 2rem ;
+        
+    }
+
+    .card-back {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .card-front {
+        position: absolute;
+        top: 17rem;
+        left: 0;
+        z-index: 1;
+    }
+
+    .card-number-container {
+        height: 3rem;
+    }
+
+    .card-number {
+        margin-top: 4rem;
+        font-size: 2.25rem;
+    }
+
+    .name-date {
+        margin-top: 2rem;
+    }
+
+    .card-cvc {
+        margin-left: 84%;
+        margin-top: 22%;
+    }
+
+    .card-forms {
+        margin-top: 30rem;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+}

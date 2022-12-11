@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Grotesk";
+  background-image: url(../IMG/bg-main-desktop.png);
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 12.8rem;
+  margin: 10.4rem 0rem 0 16.4rem;
+}
+
+.error-container {
+    height: 1.6rem;
+    margin-top: 0.8rem;
+}
+
+.error {
+  font-size: 1.2rem;
+  color: #ff5050;
+  
+  /* display: inline; */
+}
+
+
+.card-front,
+.card-back {
+  width: 44.6rem;
+  height: 24.4rem;
+  background-image: url(../IMG/bg-card-front.png);
+  background-size: cover;
+  border-radius: 0.8rem;
+  
+}
+
+.card-front {
+  padding: 2.8rem 3.2rem;
+  margin-top: 0;
+}
+
+.card-back {
+  background-image: url(../IMG/bg-card-back.png);
+  margin-top: 3.6rem;
+  margin-left: 25.8rem;
+  padding-top: 11.2rem;
+}
+
+.card-number-container {
+  height: 3.6rem;
+}
+
+.card-number {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-top: 6.4rem;
+}
+
+.name-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.6rem;
+}
+
+.card-name {
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.card-date {
+  display: flex;
+  align-items: center;
+}
+
+.card-date p {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.card-cvc {
+  font-size: 1.4rem;
+  margin-left: 35.8rem;
+  color: #ffffff;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #21092f;
+}
+
+input {
+  font-family: "Space Grotesk";
+  padding: 1.2rem 1.6rem;
+  width: 38rem;
+  border: 1px solid #dfdee0;
+  border-radius: 0.8rem;
+  outline: none;
+  font-size: 1.8rem;
+  color: #21092f;
+  /* mix-blend-mode: normal;
+  opacity: 0.25; */
+}
+
+.card-number-right-label {
+  margin-top: 2.6rem;
+}
+
+.date-cvc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.6rem;
+}
+
+.exp-date-forms {
+  display: flex;
+  gap: 1rem;
+}
+
+.month,
+.year {
+  width: 8rem;
+}
+
+.cvc-number {
+  width: 19rem;
+}
+
+.complete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.thank {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #21092F;
+  margin-top: 3.6rem;
+}
+
+.complete-info {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #8F8694;
+  margin-top: 1.6rem;
+}
+
+.confirm {
+  font-family: "Space Grotesk";
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  width: 100%;
+  padding: 1.6rem;
+  color: #ffffff;
+  background-color: #21092f;
+  border-radius: 0.8rem;
+}
+
+.confirm:hover,
+.confirm:active {
+    background-color: #2a0f39;
+    cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

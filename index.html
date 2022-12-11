@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/card logo.ico">
+
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Styles/queries.css">
+
+    <title>Card Details</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="main-container">
+        <div class="cards">
+          <div class="card-front">
+            <img src="img/card-logo.svg" alt="" class="card-logo" />
+            <div class="card-number-container">
+              <p class="card-number"></p>
+            </div>
+            <div class="name-date">
+              <p class="card-name"></p>
+              <div class="card-date">
+                <p class="card-month"></p>
+                <p>/</p>
+                <p class="card-year"></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-back">
+            <p class="card-cvc"></p>
+          </div>
+        </div>
+        <div class="card-forms">
+          <div class="forms-first">
+            <label for="cardholder-name">Cardholder Name</label>
+            <input
+              type="text"
+              name="cardholder-name"
+              id="cardholder-name"
+              class="cardholder-name"
+              placeholder="e.g. Jane Appleseed"
+            />
+            <div class="error-container">
+              <p class="error for-name hidden">Can't Be Blank</p>
+              <p class="error for-name-number hidden">Enter Correct Name</p>
+            </div>
+            <label for="card-number-right" class="card-number-right-label"
+              >Card Number</label
+            >
+            <input
+              type="text"
+              name="card-number-right"
+              id="card-number-right"
+              class="card-number-right"
+              placeholder="e.g. 1234 5678 9123 0000"
+              maxlength="16"
+            />
+            <div class="error-container">
+              <p class="error for-card-number hidden">
+                Wrong format, numbers only
+              </p>
+              <p class="error for-number-empty hidden">Can't Be Blank</p>
+              <p class="error for-number-length hidden">
+                Please Enter Correct Number
+              </p>
+            </div>
+            <div class="date-cvc">
+              <div class="exp-date">
+                <label for="month" class="label-date">Exp. Date (MM/YY)</label>
+
+                <div class="exp-date-forms">
+                  <input
+                    type="number"
+                    pattern="/^-?\d+\.?\d*$/"
+                    onKeyPress="if(this.value.length==2) return false;"
+                    name="month"
+                    id="month"
+                    class="month"
+                    placeholder="MM"
+                    min="1"
+                    max="12"
+                    maxlength="2"
+                  />
+                  <input
+                    type="number"
+                    pattern="/^-?\d+\.?\d*$/"
+                    onKeyPress="if(this.value.length==2) return false;"
+                    name="year"
+                    id="year"
+                    class="year"
+                    placeholder="YY"
+                    maxlength="2"
+                  />
+                </div>
+                <div class="error-container">
+                  <p class="error for-date hidden">Can't Be Blank</p>
+                  <p class="error for-date-correct hidden">Enter Correct Date</p>
+                </div>
+              </div>
+              <div class="cvc">
+                <label for="cvc-number">CVC</label>
+                <input
+                  type="number"
+                  pattern="/^-?\d+\.?\d*$/"
+                  onKeyPress="if(this.value.length==3) return false;"
+                  name="cvc-number"
+                  id="cvc-number"
+                  class="cvc-number"
+                  placeholder="e.g. 123"
+                  maxlength="3"
+                />
+                <div class="error-container">
+                  <p class="error for-cvc hidden">Can't Be Blank</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="complete hidden">
+            <img src="img/icon-complete.svg" alt="" class="complete-icon" />
+
+            <p class="thank">Thank You</p>
+            <p class="complete-info">We’ve added your card details</p>
+          </div>
+
+          <button class="confirm">Confirm</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
